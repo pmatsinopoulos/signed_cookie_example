@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get '/store_cookie', to: 'cookies#store'
   get '/read_cookie', to: 'cookies#read'
 
+  get '/', to: redirect('/store_cookie')
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
